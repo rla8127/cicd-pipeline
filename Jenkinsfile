@@ -10,7 +10,6 @@ pipeline {
     }
 
     stages {
-
         stage('init') {
             steps {
                 echo 'init'
@@ -25,6 +24,7 @@ pipeline {
             branch: "$RELEASE_BRANCH",
             credentialsId: "$SOURCECODE_JENKINS_CREDENTIAL_ID"
             sh 'ls -al'
+            sh 'chmod +x gradlew'
         }
       }
 
@@ -39,6 +39,6 @@ pipeline {
             cleanWs()
         }
     }
-
+        
     }
 }
