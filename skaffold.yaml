@@ -6,7 +6,7 @@ profiles:
       local:
         push: true # false는 로컬 테스트
       artifacts:
-        - image: docker.io/jei0486/demo-scg # on dev server (docker hub에 push하고 실행)
+        - image: docker.io/rla8127/demo-scg # on dev server (docker hub에 push하고 실행)
           # - image: demo-scg   # local(로컬/push없이 실행만)
           jib:
             args:
