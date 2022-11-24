@@ -34,7 +34,10 @@ pipeline {
         }
     }
 
-    
-        
+    stage('workspace clear'){
+        steps {
+            cleanWs()
+        }
+    }
     }
 }
