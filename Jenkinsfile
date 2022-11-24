@@ -1,6 +1,7 @@
 pipeline {
     agent any
     environment {
+        TAG = VersionNumber projectStartDate: '2022-11-24', versionNumberString: '${BUILDS_ALL_TILE,X}', versionPrefix: 'v', worstResultForIncrement: 'SUCCESS'
         PATH = "$PATH:/usr/local/bin/"  // skaffold, gradle , argocd path
         SOURCECODE_JENKINS_CREDENTIAL_ID = 'github'
         SOURCE_CODE_URL = 'https://github.com/rla8127/demo-scg'
