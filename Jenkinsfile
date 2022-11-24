@@ -2,10 +2,10 @@ pipeline {
     agent any
     environment {
         PATH = "$PATH:/usr/local/bin/"  // skaffold, gradle , argocd path
-        SOURCECODE_JENKINS_CREDENTIAL_ID = 'jei0486'
-        SOURCE_CODE_URL = 'https://github.com/jei0486/demo-scg'
+        SOURCECODE_JENKINS_CREDENTIAL_ID = 'github'
+        SOURCE_CODE_URL = 'https://github.com/rla8127/demo-scg'
         RELEASE_BRANCH = 'main'
-        REGISTRY = 'jei0486/demo-scg'
+        REGISTRY = 'rla8127/demo-scg'
     }
 
     stages {
