@@ -34,11 +34,7 @@ pipeline {
         }
     }
 
-    stage('workspace clear'){
-        steps {
-            
-        }
-    }
+    
         
     }
 }
