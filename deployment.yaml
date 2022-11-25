@@ -33,6 +33,6 @@ spec:
    spec:
      containers:
      - name: spring
-       image: docker.io/rla8127/demo-scg:latest
+       image: docker.io/rla8127/demo-scg:v
        ports:
        - containerPort: 8080
